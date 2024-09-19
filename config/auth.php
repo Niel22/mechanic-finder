@@ -40,6 +40,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'mechanic' => [
+            'driver' => 'session',
+            'provider' => 'mechanics',
+        ],
     ],
 
     /*
@@ -69,6 +74,11 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+
+        'mechanics' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Mechanic::class,
+        ],
     ],
 
     /*
